@@ -1,0 +1,41 @@
+.image-container {
+    position: relative; /* Establece una posición relativa para el contenedor de la imagen */
+    display: inline-block; /* Muestra el contenedor como un bloque en línea */
+  }
+  
+  .overlay {
+    position: absolute; /* Establece una posición absoluta para el div de superposición */
+    top: 0; /* Alinea el div de superposición en la parte superior del contenedor */
+    left: 0; /* Alinea el div de superposición en la parte izquierda del contenedor */
+    width: 100%; /* Establece el ancho del div de superposición al 100% del contenedor */
+    height: 100%; /* Establece la altura del div de superposición al 100% del contenedor */
+    background-color: rgba(0, 0, 0, 0.5); /* Establece el color de fondo del div de superposición con transparencia */
+    opacity: 0; /* Inicialmente, el div de superposición es invisible */
+    transition: opacity 0.3s ease; /* Agrega una transición suave a la propiedad de opacidad */
+  }
+  .overlay h1{
+    text-align: center;
+    color: aqua;
+    padding-top: 3em;
+  }
+  
+  .btn {
+    position: absolute; /* Establece una posición absoluta para el botón dentro del div de superposición */
+    top: 50%; /* Alinea verticalmente el botón en el centro del div de superposición */
+    left: 50%; /* Alinea horizontalmente el botón en el centro del div de superposición */
+    transform: translate(-50%, -50%); /* Centra exactamente el botón utilizando transformaciones */
+    padding: 10px 20px; /* Agrega relleno al botón */
+    background-color: #fff; /* Establece el color de fondo del botón */
+    color: #000; /* Establece el color del texto del botón */
+    opacity: 0; /* Inicialmente, el botón es invisible */
+    transition: opacity 0.3s ease; /* Agrega una transición suave a la propiedad de opacidad */
+  }
+  
+  .image-container:hover .overlay {
+    opacity: 1; /* Al pasar el cursor sobre el contenedor de la imagen, muestra el div de superposición cambiando la opacidad a 1 */
+  }
+  
+  .image-container:hover .btn {
+    opacity: 1; /* Al pasar el cursor sobre el contenedor de la imagen, muestra el botón cambiando la opacidad a 1 */
+  }
+  
