@@ -1,0 +1,1969 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #131315;
+    color: white;
+}
+
+#cabezero2{
+    display: none;
+}
+#entradamediaquiri{
+    display: none;
+}
+/*cabezero*/
+.cabezero {
+    margin: 0 auto;
+}
+.cabezero h1{
+    text-align: left;
+    padding-bottom: 3em;
+    padding-top: 1em;
+    padding-left: 1em;
+    font-family: 'Candal', sans-serif;
+
+}
+
+/*menu hamburgesa*/
+#menuhamburgesa{
+    float: right;
+   position: relative;
+   top: 3em;
+   padding-right: 1em;
+}
+.enlaces a{
+    text-decoration: none;
+}
+.enlaces p{
+    color: white;
+}
+.menuhamburgesa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .barra {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    margin: 3px 0;
+  }
+  
+  .barra.activo:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-100%); /* Animación hacia la izquierda */
+  }
+  
+  .barra.activo:nth-child(1) {
+    transform: rotate(45deg) translate(-6px, 6px); /* Ajustar la transformación */
+  }
+  
+  .barra.activo:nth-child(3) {
+    transform: rotate(-45deg) translate(-6px, -6px); /* Ajustar la transformación */
+  }
+  
+  .enlaces {
+    display: none;
+  }
+  
+  .enlaces.mostrar {
+    display: block;
+  }
+  
+.cabezero h2{
+    text-align: left;
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 30px;
+    font-family: 'Candal', sans-serif;
+    color: #25FF77;
+    
+}
+.miobjetivo{
+   text-align: left;
+   width: 306px;
+   display: flex;
+   justify-content: center;
+   margin: 0 auto;
+   font-size: 1.3em;
+   font-family: 'Roboto', sans-serif;
+   color: white;
+}
+
+
+/*contenido*/
+.contenido{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 14em;
+    padding-top: 5em;
+}
+.contenido img{
+    max-width: 300px;
+    height: 100%;
+    
+}
+
+
+/*tecnologias*/
+.tecnologias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.tecnologias img{
+    max-width: 100px;
+    padding: 0em 1em;
+    padding-bottom: 6em;
+}
+#tecnologias h1{
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    padding: 0em 1em;
+}
+.linea{
+    background-color: #25FF77;
+    height: 3px;
+    width: 136px;
+    margin: 0em 0em 2em 1.6em;
+    
+}
+#tecnologias p{
+    text-align: center;
+    padding-bottom: 1em;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*nota */
+.nota{
+    padding: 0em 2em;
+}
+.nota h1{
+    text-align: center;
+    padding-bottom: 0.7em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    color: #25FF77;
+}
+.nota p{
+    text-align: center;
+    padding-bottom: 2em;
+    font-family: 'Roboto', sans-serif;
+}
+.nota button{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 0.7em 1em;
+    font-family: 'Roboto', sans-serif;
+    background-color: transparent;
+    border: 2px solid #25FF77;
+    border-radius: 10px;
+}
+.botonnota{
+    padding-bottom: 4em;  
+}
+.botonnota a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*proyectos java*/
+.proyectos_listajava{
+    display: flex;
+    padding-bottom: 3em;
+    
+}
+.java h1{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 2em;
+}
+.contenedor_proyectos-java img{
+    width: 100px;
+}
+#listadeproyectos-java{
+    display: flex;
+    padding-bottom: 3em;  
+}
+.cartajava{ 
+    padding: 0em 3em;
+}
+.listageneraljava{
+    overflow: hidden;
+}
+.cartajava h3{
+    text-align: center;
+    padding: 1em 2em;
+    font-family: 'Roboto', sans-serif;
+} 
+.cartajavaprimero h3{
+    text-align: center;
+    padding: 1em 2em;
+    font-family: 'Roboto', sans-serif;
+}
+.cartajavaprimero p{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.overlayjava{
+    position: relative;
+    height: 578px;
+    bottom: 108px;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 9px;
+  
+}
+
+.fondograndejava:hover .overlayjava{
+    opacity: 1;
+}
+
+.overlayjava p{
+    font-size: 1em;
+    padding-top: 10em;
+    text-align: center;
+    width: 420px;
+    height: auto;
+
+}
+.palabrasoverlay button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1em 2em;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid #25FF77;
+    color: #25FF77;
+}
+
+
+
+
+
+
+#listadeproyectos-java{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.boton{
+    display: flex;
+    justify-content: right;
+    padding: 0em 2em;
+    
+}
+.boton button{
+    padding: 0.4em 0.7em;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+   
+}
+.boton button span{
+    color: white;
+}
+.cartajava p{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.palabrascartas{
+    padding-top: 3em;
+}
+.palabrascartas p{
+    padding-bottom: 5em;
+}
+.cartajava{
+    background-image: url(/imgproyectosgeneral/lugar-vuelo-cielo-atardecer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Un color negro semitransparente */
+    background-blend-mode: multiply; /* Mezcla la imagen y el color de fondo */ 
+    margin: 1em 2em;
+    height: 300px;
+    max-width: 500px;
+    border-radius: 10px;
+}
+.cartajava:nth-child(2){
+    background-image: url(/imgproyectosgeneral/conductor-camion-inspeccionando-vehiculo-largo-camion-antes-conducir.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartajava:nth-child(3){
+    background-image: url(/imgproyectosgeneral/recursos\ huimanos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartajava:nth-child(4){
+    background-image: url(/imgproyectosgeneral/geinzformawoomandandmen.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartajava:nth-child(5){
+    background-image: url(/imgproyectosgeneral/calculadora-indice-masa-corporal-imc-obesos-sobrepeso-categoria-normal_664444-10.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartajava:nth-child(6){
+    background-image: url(/imgproyectosgeneral/calculadora.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartajava:nth-child(7){
+    background-image: url(/imgproyectosgeneral/qr\ \(2\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartajava:nth-child(8){
+    background-image: url(/imgproyectosgeneral/virus\ informatico.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartajava:nth-child(9){
+    background-image: url(/imgproyectosgeneral/contador_saldo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+/*proyectos javascrip*/
+.proyectos_listajavascrip{
+    display: flex;  
+    padding-bottom: 3em;
+}
+.js h1{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 2em;
+}
+#listadeproyectosjs{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.cartajs h3{
+    text-align: center;
+    padding: 1em 4.5em;
+    font-family: 'Roboto', sans-serif;
+}
+.cartajs p{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.listageralajs{
+    overflow: hidden;
+    position: relative;
+}
+.palabrascartasjs p{
+    padding-bottom: 5em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.palabrascartasjs{
+    padding-top: 3em;
+}
+
+.palabrascartasjs h3{
+    text-align: center;
+    padding: 1em 5em;
+    font-family: 'Roboto', sans-serif;
+}
+.palabrascartasjs button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: transparent;
+    color: white;
+    padding: 1em 2em;
+    border: #25FF77 solid;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cartajs button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: transparent;
+    color: white;
+    padding: 1em 2em;
+    border: #25FF77 solid;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cartajs{
+    background-image: url(/imgproyectosgeneral/lugar-vuelo-cielo-atardecer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Un color negro semitransparente */
+    background-blend-mode: multiply; /* Mezcla la imagen y el color de fondo */ 
+    margin: 1em 2em;
+    height: 300px;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.cartajs:nth-child(2){
+    background-image: url(/imgproyectosgeneral/conductor-camion-inspeccionando-vehiculo-largo-camion-antes-conducir.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartajs:nth-child(3){
+    background-image: url(/imgproyectosgeneral/recursos\ huimanos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartajs:nth-child(4){
+    background-image: url(/imgproyectosgeneral/geinzformawoomandandmen.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartajs:nth-child(5){
+    background-image: url(/imgproyectosgeneral/calculadora-indice-masa-corporal-imc-obesos-sobrepeso-categoria-normal_664444-10.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartajs:nth-child(6){
+    background-image: url(/imgproyectosgeneral/calculadora.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartajs:nth-child(7){
+    background-image: url(/imgproyectosgeneral/qr\ \(2\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartajs:nth-child(8){
+    background-image: url(/imgproyectosgeneral/virus\ informatico.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartajs:nth-child(9){
+    background-image: url(/imgproyectosgeneral/contador_saldo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.botonjs{
+    display: flex;
+    justify-content: right;
+    padding: 0em 2em;
+}
+.botonjs button{
+    padding: 0.4em 0.7em;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    
+}
+.botonjs button span{
+    color: white;
+}
+
+/*proyectos python*/
+.proyectos_listapython{
+    display: flex;
+    padding-bottom: 3em;
+}
+.python h1{
+    padding-top: 3em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 2em;
+}
+.palabrascartaspython h3{ 
+    text-align: center;
+    padding: 1em 4.5em;
+    font-family: 'Roboto', sans-serif;
+}
+.palabrascartaspython p{
+    padding-bottom: 5em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.cartaspython p{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.cartaspython{
+    padding-top: 3em;
+   
+}
+.cartajs button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: transparent;
+    color: white;
+    padding: 1em 2em;
+    border: #25FF77 solid;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.palabrascartaspython button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: transparent;
+    color: white;
+    padding: 1em 2em;
+    border: #25FF77 solid;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+.cartapython{
+    background-image: url(/imgproyectosgeneral/lugar-vuelo-cielo-atardecer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Un color negro semitransparente */
+    background-blend-mode: multiply; /* Mezcla la imagen y el color de fondo */ 
+    margin: 1em 2em;
+    height: 300px;
+    max-width: 500px;
+    border-radius: 10px;
+}
+.cartapython:nth-child(2){
+    background-image: url(/imgproyectosgeneral/conductor-camion-inspeccionando-vehiculo-largo-camion-antes-conducir.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartapython:nth-child(3){
+    background-image: url(/imgproyectosgeneral/recursos\ huimanos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartapython:nth-child(4){
+    background-image: url(/imgproyectosgeneral/geinzformawoomandandmen.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartapython:nth-child(5){
+    background-image: url(/imgproyectosgeneral/calculadora-indice-masa-corporal-imc-obesos-sobrepeso-categoria-normal_664444-10.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartapython:nth-child(6){
+    background-image: url(/imgproyectosgeneral/calculadora.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartapython:nth-child(7){
+    background-image: url(/imgproyectosgeneral/qr\ \(2\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartapython:nth-child(8){
+    background-image: url(/imgproyectosgeneral/virus\ informatico.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartapython:nth-child(9){
+    background-image: url(/imgproyectosgeneral/contador_saldo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pañabrascartaspython button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: transparent;
+    color: white;
+    padding: 1em 2em;
+    border: #25FF77 solid;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+#listaproyectospython{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.listeageneralpython{
+    overflow: hidden;
+    position: relative;
+}
+.botonpython{
+    display: flex;
+    justify-content: right;
+    padding: 0em 2em;
+}
+.botonpython button{
+    padding: 0.4em 0.7em;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+}
+.botonpython button span{
+    color: white;
+}
+
+
+
+/*proyectos c*/
+.proyectos_listac{
+    display: flex;
+    padding-bottom: 3em;
+}
+.c h1{
+    padding-top: 3em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 2em;
+}
+.pañabrascartasc button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: transparent;
+    color: white;
+    padding: 1em 2em;
+    border: #25FF77 solid;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+#listaproyectosc{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.listageneralc{
+    position: relative;
+    overflow: hidden;
+}
+.botonc{
+    display: flex;
+    justify-content: right;
+    padding: 0em 2em;
+}
+.botonc button{
+    padding: 0.4em 0.7em;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+}
+.botonc button span{
+    color: white;
+}
+.pañabrascartasc{
+    padding-top: 3em;
+}
+.pañabrascartasc h3{ 
+    
+    text-align: center;
+    padding: 1em 4.5em;
+    font-family: 'Roboto', sans-serif;
+}
+.pañabrascartasc p{
+    padding-bottom: 5em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.cartac{
+    background-image: url(/imgproyectosgeneral/lugar-vuelo-cielo-atardecer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Un color negro semitransparente */
+    background-blend-mode: multiply; /* Mezcla la imagen y el color de fondo */ 
+    margin: 1em 2em;
+    height: 300px;
+    max-width: 500px;
+    border-radius: 10px;
+}
+.cartac:nth-child(2){
+    background-image: url(/imgproyectosgeneral/conductor-camion-inspeccionando-vehiculo-largo-camion-antes-conducir.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartac:nth-child(3){
+    background-image: url(/imgproyectosgeneral/recursos\ huimanos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartac:nth-child(4){
+    background-image: url(/imgproyectosgeneral/geinzformawoomandandmen.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartac:nth-child(5){
+    background-image: url(/imgproyectosgeneral/calculadora-indice-masa-corporal-imc-obesos-sobrepeso-categoria-normal_664444-10.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartac:nth-child(6){
+    background-image: url(/imgproyectosgeneral/calculadora.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartac:nth-child(7){
+    background-image: url(/imgproyectosgeneral/qr\ \(2\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartac:nth-child(8){
+    background-image: url(/imgproyectosgeneral/virus\ informatico.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartac:nth-child(9){
+    background-image: url(/imgproyectosgeneral/contador_saldo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.palabrascartasc button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: transparent;
+    color: white;
+    padding: 1em 2em;
+    border: #25FF77 solid;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+.palabrascartasc h3{ 
+    text-align: center;
+    padding: 1em 4.5em;
+    font-family: 'Roboto', sans-serif;
+}
+.palabrascartasc p{
+    padding-bottom: 5em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*proyectos mysql*/
+.proyectos_listamysql{
+    display: flex;
+    padding-bottom: 3em;
+}
+.mysql h1{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 2em;
+}
+.pañabrascartasmysql{
+    padding-top: 3em;
+}
+.pañabrascartasmysql h3{
+    text-align: center;
+    padding: 1em 4.5em;
+    font-family: 'Roboto', sans-serif;
+}
+.pañabrascartasmysql p{
+    padding-bottom: 5em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.pañabrascartasmysql button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: transparent;
+    color: white;
+    padding: 1em 2em;
+    border: #25FF77 solid;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+.cartamysql{
+    background-image: url(/imgproyectosgeneral/lugar-vuelo-cielo-atardecer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Un color negro semitransparente */
+    background-blend-mode: multiply; /* Mezcla la imagen y el color de fondo */ 
+    margin: 1em 2em;
+    height: 300px;
+    max-width: 500px;
+    border-radius: 10px;
+}
+.cartamysql:nth-child(2){
+    background-image: url(/imgproyectosgeneral/conductor-camion-inspeccionando-vehiculo-largo-camion-antes-conducir.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartamysql:nth-child(3){
+    background-image: url(/imgproyectosgeneral/recursos\ huimanos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartamysql:nth-child(4){
+    background-image: url(/imgproyectosgeneral/geinzformawoomandandmen.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartamysql:nth-child(5){
+    background-image: url(/imgproyectosgeneral/calculadora-indice-masa-corporal-imc-obesos-sobrepeso-categoria-normal_664444-10.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartamysql:nth-child(6){
+    background-image: url(/imgproyectosgeneral/calculadora.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartamysql:nth-child(7){
+    background-image: url(/imgproyectosgeneral/qr\ \(2\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartamysql:nth-child(8){
+    background-image: url(/imgproyectosgeneral/virus\ informatico.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartamysql:nth-child(9){
+    background-image: url(/imgproyectosgeneral/contador_saldo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contenedor_proyectos_mysql button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: transparent;
+    color: white;
+    padding: 1em 2em;
+    border: #25FF77 solid;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+#listaporyectomysql{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.listageneralmysql{
+    overflow: hidden;
+    position: relative;
+}
+.botonmysql{
+    display: flex;
+    justify-content: right;
+    padding: 0em 2em;
+}
+.botonmysql button{
+    padding: 0.4em 0.7em;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+}
+.botonmysql button span{
+    color: white;
+}
+
+
+.palabrascartasmysql button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: transparent;
+    color: white;
+    padding: 1em 2em;
+    border: #25FF77 solid;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+.palabrascartasmysql h3{ 
+    text-align: center;
+    padding: 1em 4.5em;
+    font-family: 'Roboto', sans-serif;
+}
+.palabrascartasmysql p{
+    padding-bottom: 5em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*sobre mi */
+#sobre_mi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+.sobre_mi{
+    margin: 0 auto;
+   
+}
+.sobre_mi h1{
+    text-align: left;
+    font-size: 3em;
+    font-family: 'Cabin', sans-serif;
+    color: #25FF77;
+    
+}
+.sobre_mi p{
+    text-align: left;
+    width: 211px;
+    font-family: 'Asap Condensed', sans-serif;
+
+}
+.sobre_mi{
+    padding-top: 4em;
+}
+.certificacion h1{
+    text-align: left;
+    font-size: 3em;
+    font-family: 'Cabin', sans-serif;
+    color: #25FF77;
+    
+}
+.certificacion p{
+    text-align: left;
+    width: 211px;
+    font-family: 'Asap Condensed', sans-serif;
+}
+.certificacion{
+    padding-top: 4em;
+}
+.experiencia h1{
+    text-align: left;
+    font-size: 3em;
+    font-family: 'Cabin', sans-serif;
+    color: #25FF77;
+    
+}
+.experiencia p{
+    text-align: left;
+    width: 211px;
+    font-family: 'Asap Condensed', sans-serif;
+}
+.experiencia{
+    padding-top: 4em;
+}
+
+
+/*redes*/
+#redes{
+    display: flex;
+    justify-content: center;
+    padding-top: 3em;
+}
+.redes{
+    background-color: black;
+    width: 100%;
+}
+.redes img{
+    max-width: 24px;
+   margin: 0em 0.2em;
+}
+.titulosredes{ 
+   padding-bottom: 1em;
+}
+.titulosredes h1{
+    text-align:center;
+    padding-bottom: 0.5em;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 1em;
+
+}
+.titulosredes p{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 1em;
+}
+.logoredes{
+   
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1em;
+    padding-top: 1em;
+
+}
+.lineavertical{
+    background-color: white;
+    width: 1px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+   
+}
+.lineavertical2{
+    background-color: white;
+    width: 1px;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.lineahorizontal{
+    background-color: white;
+    width: 140px;
+    height: 1px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.espciolineavertical{
+    padding-top: 0.5em;
+}
+.final{
+    text-align: center;
+    font-size: 0.7em;
+    padding-bottom: 3em;
+    font-family: 'Roboto', sans-serif;
+}
+.circulo{
+    background-color:transparent;
+    height: 70px;
+    width: 70px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 3px solid white;
+    position: relative;
+    top:4.5em;
+   
+}
+
+
+@media screen and (min-width: 700px) {
+    #menuhamburgesa{
+        display: none;
+    }
+    #cabezero{
+        display: none;
+    }
+    #cabezero2{
+        display: block;
+    }
+    .contenido{
+        display: none;
+        
+    }
+    #entradamediaquiri{
+        display: block;
+    }
+    #tecnologias h1, .linea {
+        display: none;
+    }
+    .mpb h1{
+        text-align: left;
+        position: relative;
+        top: 21px;
+        padding-left: 1em;
+        font-size: 3em;
+        font-family: 'roboto',sans-serif;
+        width: 30px;
+    }
+    .links{
+        display: flex;
+        justify-content: right;
+       
+    
+    }
+    .links a{
+        text-decoration: none;
+        
+    }
+    .links{
+        padding: 0em 2em;
+    }
+    .links p{
+        text-align: left;
+        color: white;
+        margin: 0em 1em;
+        font-family: 'roboto',sans-serif;
+        position: relative;
+        bottom: 1em;
+        color: #25FF77;
+    }
+    .links p:hover{
+        color: #fff;
+    }
+
+    /*entrada 2*/
+    #entradamediaquiri{
+        height: 400px;
+    }
+    .generalentrada2{
+        display: flex;
+        justify-content: center;
+        padding: 2em 0em;
+
+    }
+    .img img{
+        padding-top: 3em;
+        max-width: 300px;
+    }
+    .sobremi {
+        text-align: left;
+        padding: 4em 2em;
+        
+    }
+    .sobremi h2{
+        font-size: 3em;
+        font-family: 'roboto',sans-serif;
+    }
+    .miobjetio2{
+        padding-top: 1em;
+        max-width: 306px;
+        font-size: 1em;
+        font-family: 'roboto',sans-serif;
+    }
+
+     /*tecnologias */
+    #tecnologias{
+        height: 500px;
+    }
+    .tecnologias img{
+        max-width: 200px;
+    }
+
+  
+
+
+
+
+
+
+
+
+    
+
+}
+@media screen and (min-width: 1200px) {
+    #mysql{
+        padding-bottom: 9em;
+    }
+    .tecnologias {
+        display: block;
+        padding-top: 4em;
+        padding-bottom: 4em;
+    }
+    #tecnologias{
+        height: auto; 
+    }
+    .htmlimg img{
+       max-width: 360px;
+    }
+    .flexhtml{
+        display: flex;
+        justify-content: center;
+        height: auto;
+    }
+    #palabrashtml{
+        font-size: 1.4em;
+        width: 363px;
+        background-color:#25FF77;
+        color: black;
+        position: relative;
+        top: 62px;
+        right: 92px;
+        height: 370px;
+    }
+    #palabrashtml h2{
+        text-align: left;
+        font-size: 1.4em;
+        font-family: 'roboto',sans-serif;
+        padding: 1em 2em;
+    }
+    #palabrashtml p{
+        text-align: left;
+        font-size: 0.8em;
+        width: 315px;
+        padding-left: 3.5em;
+        color: black;
+    }
+
+    #palabrashtml button{
+       display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0.5em 1em;
+        border-radius: 20px;
+        border: 2px solid #131315;
+        background-color: transparent;
+    }
+    #palabrashtml a{
+        text-decoration: none;
+        color: black;
+    }
+
+
+    /*cartas java */
+    .javaimg img{
+        
+        max-width: 360px;
+     }
+     .flexjava{
+         display: flex;
+         justify-content: center;
+         height: auto;
+       
+        
+     }
+     #palabrasjava{
+         font-size: 1.4em;
+         width: 363px;
+         background-color: #25FF77;
+         color: black;
+         position: relative;
+         top: 62px;
+        left: 64px;
+         height: 370px;
+     }
+     #palabrasjava h2{
+         text-align: left;
+         font-size: 1.4em;
+         font-family: 'roboto',sans-serif;
+         padding: 1em 2em;
+     }
+     #palabrasjava p{
+         text-align: left;
+         font-size: 0.8em;
+         width: 315px;
+         padding-left: 3.5em;
+         color: black;
+     }
+     #palabrasjava button{
+        display: flex;
+         justify-content: center;
+         margin: 0 auto;
+         padding: 0.5em 1em;
+         border-radius: 20px;
+         border: 2px solid #131315;
+         background-color: transparent;
+     }
+     #palabrasjava a{
+         text-decoration: none;
+         color: black;
+     }
+
+
+
+
+   /*cartas mysql */
+     .flexmysql{
+        display: flex;
+        justify-content: center;
+        height: auto;
+       
+    }
+    .mysqlimg img{
+        
+        max-width: 360px;
+       
+      
+     }
+    #palabrasmysql{
+        font-size: 1.4em;
+        width: 363px;
+        background-color: #25FF77;
+        color: black;
+        position: relative;
+        top: 62px;
+        right: 92px;
+        height: 370px;
+    }
+    #palabrasmysql h2{
+        text-align: left;
+        font-size: 1.4em;
+        font-family: 'roboto',sans-serif;
+        padding: 1em 2em;
+    }
+    #palabrasmysql p{
+        text-align: left;
+        font-size: 0.8em;
+        width: 315px;
+        padding-left: 3.5em;
+        color: black;
+        
+    }
+    #palabrasmysql button{
+        display: flex;
+         justify-content: center;
+         margin: 0 auto;
+         padding: 0.5em 1em;
+         border-radius: 20px;
+         border: 2px solid #131315;
+         background-color: transparent;
+    }
+     #palabrasmysql a{
+         text-decoration: none;
+         color: black;
+    }
+ 
+
+  /*cartas python */
+    .pythonlimg img{
+        max-width: 360px;
+     }
+     .flexmpython{
+         display: flex;
+         justify-content: center;
+         height: auto;
+       
+        
+     }
+     #palabraspython{
+         font-size: 1.4em;
+         width: 363px;
+         background-color: #25FF77;
+         color: black;
+         position: relative;
+         top: 62px;
+        left: 64px;
+         height: 370px;
+     }
+     #palabraspython h2{
+         text-align: left;
+         font-size: 1.4em;
+         font-family: 'roboto',sans-serif;
+         padding: 1em 2em;
+     }
+     #palabraspython p{
+         text-align: left;
+         font-size: 0.8em;
+         width: 315px;
+         padding-left: 3.5em;
+         color: black;  
+     }
+     #palabraspython button{
+        display: flex;
+         justify-content: center;
+         margin: 0 auto;
+         padding: 0.5em 1em;
+         border-radius: 20px;
+         border: 2px solid #131315;
+         background-color: transparent;
+     }
+     #palabraspython a{
+         text-decoration: none;
+         color: black;
+     }
+
+    /*redes */
+    #sobre_mi{
+        background-image: url(/imgfondos/accesorios-personales-taza-cafe-auricular-anteojos-teclado-sobre-fondo-negro.jpg);
+        background-size: cover;
+        background-position: center;
+        background-color: rgba(0, 0, 0, 0.5); /* Un color negro semitransparente */
+        background-blend-mode: multiply; /* Mezcla la imagen y el color de fondo */ 
+       height: 700px;
+     
+    }
+    .fondo{
+        background-color: #131315;
+        padding: 8em 2em;
+    }
+    .fondo_color{
+        display: flex;
+     
+    }
+    .sobre_mi{
+        padding: 3em 3em;
+    }
+    .certificacion{
+        padding: 3em 3em;
+    }
+    .experiencia{
+        padding: 3em 3em;
+    }
+    .certificacion p {
+        text-align: left;
+        width: 315px;
+        font-family: 'Asap Condensed', sans-serif;
+    }
+
+
+/*proyectos java*/
+#java{
+    padding-top: 4em;
+    padding-bottom: 5em;
+}
+.java{
+    display: none;
+}
+.primeraparte{
+    height: 1065px;
+    background-color: #131315;
+    position: relative;
+    transition: width  0.5s;
+    bottom: 576px;
+    overflow: hidden;
+}
+.oculto{
+    height: 0;
+    padding: 0;
+    border: none;
+    overflow: hidden;
+}
+
+.segundapartemostrar{
+    height: 523px;
+    width: 100%;
+}
+#botones{
+    display: flex;
+}
+.botondentro button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    padding: 1em 2em;
+}
+.botonocultar{
+    padding: 4em 0em;
+}
+.botonocultar button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: transparent;
+    color: #25FF77;
+    border: 2px solid #25FF77;
+    border-radius: 20px;
+  
+}
+.botonocultar button:hover{
+    background-color: #25FF77;
+}
+.botonocultar button:hover,
+.botonocultar button:focus{
+    color: white;
+}
+
+
+.botondentro{
+    padding: 0em 0em 0em 0em;
+}
+.botondentro button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: transparent;
+    color: #25FF77;
+    border: 2px solid #25FF77;
+    border-radius: 20px;
+  
+}
+.botondentro button:hover{
+    background-color: #25FF77;
+}
+.botondentro button:hover,
+.botondentro button:focus{
+    color: white;
+}
+
+
+
+
+.contenedorgeneral_listasjava{
+   height: 1074px;
+   overflow: hidden;
+}
+
+.primeraparte h1{
+    text-align: center;
+    padding-top: 5em;
+    font-size: 4em;
+    font-family: 'Roboto', sans-serif;
+    color: #25FF77;
+}
+
+.primeraparte p{
+    text-align: center;
+    padding-top: 2em;
+    font-size: 2m;
+    font-family: 'Roboto', sans-serif;
+    color: #25FF77;
+}
+
+.listageneraljava{
+    position: relative;
+}
+.contenedeorgeneraljavasss{
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+
+ 
+   .flexjavas{
+    display: flex;
+    justify-content: center;
+    
+    align-content: flex-start;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+   .cartajavaprimero{
+    background-image: url(/imgproyectosgeneral/lugar-vuelo-cielo-atardecer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Un color negro semitransparente */
+    background-blend-mode: multiply; /* Mezcla la imagen y el color de fondo */ 
+    margin: 1em 1em;
+    height: 578px;
+    width: 590px;
+    border-radius: 10px;
+    }
+    #cartasjavaid{
+        max-width: 400px;
+    }
+    #tamañobajojava{
+        width: 256px;
+    }
+    .bajoelgeraljava{
+        display: flex;
+    }
+
+
+
+
+
+
+
+/*proyectos js*/
+    #proyectos-javasctip{
+        height: 1023px;
+    }
+    .flexalcostado{
+        display: flex;
+        justify-content: center;
+        align-content: flex-start;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        }
+      
+      
+
+        .ocultos{
+            height: 0;
+            padding: 0;
+            border: none;
+            overflow: hidden;
+        }
+      
+        .primerapartejs{
+            height: 1065px;
+            background-color: #131315;
+            position: relative;
+            transition: width  0.5s;
+            top: -821px;
+            width: 100%;
+
+            overflow: hidden;
+        }
+        .primerapartejs h1{
+            text-align: center;
+            padding-top: 7em;
+            font-size: 4em;
+            font-family: 'Roboto', sans-serif;
+            color: #25FF77;
+        }
+        
+        .primerapartejs p{
+            text-align: center;
+            padding-top: 2em;
+            font-size: 2m;
+            font-family: 'Roboto', sans-serif;
+            color: #25FF77;
+            padding-bottom: 4em;
+        }
+        .botonocultarjs button{
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            align-items: center;
+            padding: 1em 2em;
+            background-color: transparent;
+            color: #25FF77;
+            border: 2px solid #25FF77;
+            border-radius: 20px;
+          
+        }
+       .botondentrojs button{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        align-items: center;
+        padding: 1em 2em;
+        background-color: transparent;
+        color: #25FF77;
+        border: 2px solid #25FF77;
+        border-radius: 20px;
+    }
+       
+      
+    .cartasjsprimero{
+        background-image: url(/imgproyectosgeneral/lugar-vuelo-cielo-atardecer.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgba(0, 0, 0, 0.8); /* Un color negro semitransparente */
+        background-blend-mode: multiply; /* Mezcla la imagen y el color de fondo */ 
+        margin: 1em 1em;
+        height: 578px;
+        width: 590px;
+        border-radius: 10px;
+        }
+        #cartasjavaid{
+            max-width: 400px;
+        }
+        #cartasjsid {
+            max-width: 400px;
+        }
+        #cartasjsid{
+            width: 256px;
+        }
+        .debajoimg{
+            display: flex;
+        }
+
+
+/*proyectos python*/
+    .flexalcostadopython{
+        display: flex;
+        justify-content: center;
+        align-content: flex-start;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        }
+       .cartasjsprimeropython{
+        background-image: url(/imgproyectosgeneral/lugar-vuelo-cielo-atardecer.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgba(0, 0, 0, 0.8); /* Un color negro semitransparente */
+        background-blend-mode: multiply; /* Mezcla la imagen y el color de fondo */ 
+        margin: 1em 1em;
+        height: 578px;
+        width: 590px;
+        border-radius: 10px;
+        }
+        #cartaspythonid{
+            max-width: 400px;
+        }
+        #cartaspythonid {
+            max-width: 400px;
+        }
+        #cartaspythonid{
+            width: 256px;
+        }
+        .debajoimgpython{
+            display: flex;
+        }
+
+
+        #proyectos-python{
+            height: 1023px;
+        }
+        .primerapartepython{
+            height: 1065px;
+            background-color: #131315;
+            position: relative;
+            transition: width  0.5s;
+            top: -821px;
+            width: 100%;
+
+            overflow: hidden;
+        }
+        .primerapartepython h1{
+            text-align: center;
+            padding-top: 7em;
+            font-size: 4em;
+            font-family: 'Roboto', sans-serif;
+            color: #25FF77;
+        }
+        
+        .primerapartepython p{
+            text-align: center;
+            padding-top: 2em;
+            font-size: 2m;
+            font-family: 'Roboto', sans-serif;
+            color: #25FF77;
+            padding-bottom: 4em;
+        }
+        .primerapartepython button{
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            align-items: center;
+            padding: 1em 2em;
+            background-color: transparent;
+            color: #25FF77;
+            border: 2px solid #25FF77;
+            border-radius: 20px;
+          
+        }
+        .botondentropython button{
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            align-items: center;
+            padding: 1em 2em;
+            background-color: transparent;
+            color: #25FF77;
+            border: 2px solid #25FF77;
+            border-radius: 20px;
+        }
+
+
+
+
+/*proyectos c*/
+    .flexalcostadoc{
+        display: flex;
+        justify-content: center;
+      
+        align-content: flex-start;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+       }
+       .cartasjsprimeroc{
+        background-image: url(/imgproyectosgeneral/lugar-vuelo-cielo-atardecer.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgba(0, 0, 0, 0.8); /* Un color negro semitransparente */
+        background-blend-mode: multiply; /* Mezcla la imagen y el color de fondo */ 
+        margin: 1em 1em;
+        height: 578px;
+        width: 590px;
+        border-radius: 10px;
+        }
+        #cartascid{
+            max-width: 400px;
+        }
+        #cartascid {
+            max-width: 400px;
+        }
+        #cartascid{
+            width: 256px;
+        }
+        .debajoimgc{
+            display: flex;
+        }
+
+
+
+
+
+        #c{
+            height: 1023px;
+        }
+        .primerapartec{
+            height: 1065px;
+            background-color: #131315;
+            position: relative;
+            transition: width  0.5s;
+            top: -821px;
+            width: 100%;
+
+            overflow: hidden;
+        }
+        .primerapartec h1{
+            text-align: center;
+            padding-top: 7em;
+            font-size: 4em;
+            font-family: 'Roboto', sans-serif;
+            color: #25FF77;
+        }
+        
+        .primerapartec p{
+            text-align: center;
+            padding-top: 2em;
+            font-size: 2m;
+            font-family: 'Roboto', sans-serif;
+            color: #25FF77;
+            padding-bottom: 4em;
+        }
+        .primerapartec button{
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            align-items: center;
+            padding: 1em 2em;
+            background-color: transparent;
+            color: #25FF77;
+            border: 2px solid #25FF77;
+            border-radius: 20px;
+          
+        }
+        .botondentroc button{
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            align-items: center;
+            padding: 1em 2em;
+            background-color: transparent;
+            color: #25FF77;
+            border: 2px solid #25FF77;
+            border-radius: 20px;
+        }
+
+
+
+/*proyectos mysql*/
+    .flexalcostadomysql{
+        display: flex;
+        justify-content: center; 
+        align-content: flex-start;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+       }   
+       .cartasjsprimeromysql{
+        background-image: url(/imgproyectosgeneral/lugar-vuelo-cielo-atardecer.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgba(0, 0, 0, 0.8); /* Un color negro semitransparente */
+        background-blend-mode: multiply; /* Mezcla la imagen y el color de fondo */ 
+        margin: 1em 1em;
+        height: 578px;
+        width: 590px;
+        border-radius: 10px;
+        }
+        #cartasmysqlid{
+            max-width: 400px;
+        }
+        #cartasmysqlid {
+            max-width: 400px;
+        }
+        #cartasmysqlid{
+            width: 256px;
+        }
+        .debajoimgpython{
+            display: flex;
+        }
+
+
+        #mysql{
+            height: 1023px;
+        }
+        .primerapartemysql{
+            height: 1065px;
+            background-color: #131315;
+            position: relative;
+            transition: width  0.5s;
+            top: -821px;
+            width: 100%;
+
+            overflow: hidden;
+        }
+        .primerapartemysql h1{
+            text-align: center;
+            padding-top: 7em;
+            font-size: 4em;
+            font-family: 'Roboto', sans-serif;
+            color: #25FF77;
+        }
+        
+        .primerapartemysql p{
+            text-align: center;
+            padding-top: 2em;
+            font-size: 2m;
+            font-family: 'Roboto', sans-serif;
+            color: #25FF77;
+            padding-bottom: 4em;
+        }
+        .primerapartemysql button{
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            align-items: center;
+            padding: 1em 2em;
+            background-color: transparent;
+            color: #25FF77;
+            border: 2px solid #25FF77;
+            border-radius: 20px;
+          
+        }
+        .botondentromysql button{
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            align-items: center;
+            padding: 1em 2em;
+            background-color: transparent;
+            color: #25FF77;
+            border: 2px solid #25FF77;
+            border-radius: 20px;
+        }
+
+}
